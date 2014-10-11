@@ -1,9 +1,12 @@
 <?php
 class PostsController extends AppController {
-    public $helpers = array('Html', 'Form');
+    public $helpers = array('Html', 'Form', 'Youtube');
 
     public function index() {
         $this->set('posts', $this->Post->find('all'));
+    }
+    public function user_posts() {
+        $this->set('posts', $this->Post->find('all', array('conditions' =>array('user_id' => $this->Auth->user('id')))));
     }
 
     public function view($id = null) {
@@ -13,6 +16,7 @@ class PostsController extends AppController {
 
     public function add() {
         if ($this->request->is('post')) {
+        	$this->request->data['Post']['user_id'] = $this->Auth->user('id');
             if ($this->Post->save($this->request->data)) {
                 $this->Session->setFlash('Your post has been saved.');
                 $this->redirect(array('action' => 'index'));

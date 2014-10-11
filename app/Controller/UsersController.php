@@ -14,7 +14,7 @@ class UsersController extends AppController
   {
     if ($this->request->is('post')) {
         if ($this->Auth->login()) {
-            $this->Session->setFlash(__('Invalid username or password, try again'),'notifications/alert', array('class' => 'alert-success' ));
+          //  $this->Session->setFlash(__('Invalid username or password, try again'),'notifications/alert', array('class' => 'alert-success' ));
             $this->redirect($this->Auth->redirect());
         } else {
             $this->Session->setFlash(__('Invalid username or password, try again'),'notifications/alert', array('class' => 'alert-error' ));
