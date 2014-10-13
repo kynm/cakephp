@@ -6,9 +6,10 @@
     <?php foreach ($posts as $post): ?>
     <tr>
         <td>
+            <h2>
+            title :
             <?php echo $this->Html->link($post['Post']['title'], array('action' => 'view', $post['Post']['id']));?>
-        </td>
-        <td>
+            </h2>
         <?php if($this->Session->read('Auth.User.id') == $post['Post']['user_id']): ?>
             <?php echo $this->Form->postLink(
             'Delete',
@@ -17,10 +18,10 @@
             ?>
             <?php echo $this->Html->link('Edit', array('action' => 'edit', $post['Post']['id']));?>
         <?php endif?>
+        <?php echo $post['Post']['created']; ?>
         </td>
-        <td>
-            <?php echo $post['Post']['created']; ?>
-        </td>
+    </tr>
+    <tr>
         <td>
             <?php echo $this->Youtube->thumbnail($post['Post']['body']); ?>
         </td>

@@ -45,7 +45,7 @@
         ); 
 
         // Outputs Youtube video image 
-        function thumbnail($url, $size = 'thumb', $options = array()) { 
+        function thumbnail($url, $size = 'large', $options = array()) { 
 
             // Sets the video ID for the image API 
             $video_id = $this->getVideoId($url); 

@@ -21,6 +21,7 @@ class PostsController extends AppController {
                 $this->Session->setFlash('Your post has been saved.');
                 $this->redirect(array('action' => 'index'));
             } else {
+                $this->set('errors', $this->Post->validationErrors);
                 $this->Session->setFlash('Unable to add your post.');
             }
         }
