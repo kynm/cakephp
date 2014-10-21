@@ -1,12 +1,30 @@
 <?php
 class PostsController extends AppController {
-    public $helpers = array('Html', 'Form', 'Youtube');
+    public $helpers = array('Html', 'Form', 'Youtube', 'Paginator');
+    public $components = array('Paginator');
+
+    public $paginate = array(
+        'Post' => array('limit' => 4,
+            'order' => array(
+                'Post.title' => 'asc'
+            )
+        ),
+    );
 
     public function index() {
-        $this->set('posts', $this->Post->find('all'));
+        $this->Paginator->settings = array(
+            'limit' => 4
+        );
+        $data = $this->Paginator->paginate('Post');
+        $this->set('posts', $data);
     }
     public function user_posts() {
-        $this->set('posts', $this->Post->find('all', array('conditions' =>array('user_id' => $this->Auth->user('id')))));
+        $this->Paginator->settings = array(
+            'conditions' =>array('user_id' => $this->Auth->user('id')),
+            'limit' => 4,
+        );
+        $data = $this->Paginator->paginate('Post');
+        $this->set('posts', $data);
     }
 
     public function view($id = null) {

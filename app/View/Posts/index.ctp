@@ -28,3 +28,12 @@
     </tr>
     <?php endforeach; ?>
 </table>
+<div class="pagination">
+    <ul>
+        <?php 
+            echo $this->Paginator->prev( '<<', array( 'class' => '', 'tag' => 'li' ), null, array( 'class' => 'disabled myclass', 'tag' => 'li' ) );
+            echo $this->Paginator->numbers( array( 'tag' => 'li', 'separator' => '', 'currentClass' => 'disabled myclass' ) );
+            echo $this->Paginator->next( '>>', array( 'class' => '', 'tag' => 'li' ), null, array( 'class' => 'disabled myclass', 'tag' => 'li' ) );
+        ?>
+    </ul>
+</div>

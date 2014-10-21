@@ -5,3 +5,4 @@
 <p><small>Created: <?php echo $post['Post']['created']?></small></p>
 
 <p><?php echo $this->Youtube->video($post['Post']['body'])?></p>
+<?php echo $this->Facebook->comments();?>
