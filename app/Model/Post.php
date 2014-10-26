@@ -25,6 +25,12 @@ class Post extends AppModel {
 			return true;    
 		}
   	}
+	  public $hasMany = array(
+	    'Comment'=>array(
+	       'className'=>'Comment',
+	       'foreignKey'=>'post_id'
+	    ),
+	  );
 
 }
 ?>
