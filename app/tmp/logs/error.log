@@ -1,0 +1,326 @@
+2014-10-11 19:57:06 Error: [CakeException] $controller does not implement an isAuthorized() method.
+#0 D:\xampp\htdocs\cakephp\lib\Cake\Controller\Component\Auth\BaseAuthorize.php(71): ControllerAuthorize->controller(Object(PostsController))
+#1 D:\xampp\htdocs\cakephp\lib\Cake\Controller\Component\AuthComponent.php(418): BaseAuthorize->__construct(Object(ComponentCollection), Array)
+#2 D:\xampp\htdocs\cakephp\lib\Cake\Controller\Component\AuthComponent.php(380): AuthComponent->constructAuthorize()
+#3 D:\xampp\htdocs\cakephp\lib\Cake\Controller\Component\AuthComponent.php(330): AuthComponent->isAuthorized(Array)
+#4 [internal function]: AuthComponent->startup(Object(PostsController))
+#5 D:\xampp\htdocs\cakephp\lib\Cake\Utility\ObjectCollection.php(130): call_user_func_array(Array, Array)
+#6 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#7 D:\xampp\htdocs\cakephp\lib\Cake\Event\CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#8 D:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#9 D:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(100): Controller->startupProcess()
+#10 D:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#11 D:\xampp\htdocs\cakephp\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-10-11 20:07:07 Error: [MissingViewException] View file "D:\xampp\htdocs\cakephp\app\View\Pages\display.ctp" is missing.
+#0 D:\xampp\htdocs\cakephp\lib\Cake\View\View.php(460): View->_getViewFileName('display')
+#1 D:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(959): View->render('display', NULL)
+#2 D:\xampp\htdocs\cakephp\app\Controller\PagesController.php(80): Controller->render('display')
+#3 [internal function]: PagesController->display('display')
+#4 D:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 D:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#6 D:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#7 D:\xampp\htdocs\cakephp\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2014-10-11 20:14:05 Error: [MissingActionException] Action PostsController::allPosts() could not be found.
+#0 D:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 D:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#2 D:\xampp\htdocs\cakephp\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-11 20:15:15 Error: [MissingActionException] Action PostsController::allPosts() could not be found.
+#0 D:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 D:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#2 D:\xampp\htdocs\cakephp\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-11 20:15:18 Error: [MissingActionException] Action PostsController::allPosts() could not be found.
+#0 D:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 D:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#2 D:\xampp\htdocs\cakephp\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-11 20:15:20 Error: [MissingActionException] Action PostsController::allPosts() could not be found.
+#0 D:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 D:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#2 D:\xampp\htdocs\cakephp\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-11 20:15:22 Error: [MissingActionException] Action PostsController::allPosts() could not be found.
+#0 D:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 D:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#2 D:\xampp\htdocs\cakephp\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-11 20:15:42 Error: [MissingActionException] Action PostsController::allPosts() could not be found.
+#0 D:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 D:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#2 D:\xampp\htdocs\cakephp\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-11 21:54:51 Error: [MissingHelperException] Helper class YoutubeHelper could not be found.
+#0 D:\xampp\htdocs\cakephp\lib\Cake\View\View.php(850): HelperCollection->load('Youtube', Array)
+#1 D:\xampp\htdocs\cakephp\lib\Cake\View\View.php(456): View->loadHelpers()
+#2 D:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(959): View->render(NULL, NULL)
+#3 D:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(110): Controller->render()
+#4 D:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#5 D:\xampp\htdocs\cakephp\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-10-11 21:55:31 Error: [MissingHelperException] Helper class YoutubeHelper could not be found.
+#0 D:\xampp\htdocs\cakephp\lib\Cake\View\View.php(850): HelperCollection->load('Youtube', Array)
+#1 D:\xampp\htdocs\cakephp\lib\Cake\View\View.php(456): View->loadHelpers()
+#2 D:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(959): View->render(NULL, NULL)
+#3 D:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(110): Controller->render()
+#4 D:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#5 D:\xampp\htdocs\cakephp\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-10-11 21:55:34 Error: [MissingHelperException] Helper class YoutubeHelper could not be found.
+#0 D:\xampp\htdocs\cakephp\lib\Cake\View\View.php(850): HelperCollection->load('Youtube', Array)
+#1 D:\xampp\htdocs\cakephp\lib\Cake\View\View.php(456): View->loadHelpers()
+#2 D:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(959): View->render(NULL, NULL)
+#3 D:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(110): Controller->render()
+#4 D:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#5 D:\xampp\htdocs\cakephp\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-10-11 21:55:36 Error: [MissingHelperException] Helper class YoutubeHelper could not be found.
+#0 D:\xampp\htdocs\cakephp\lib\Cake\View\View.php(850): HelperCollection->load('Youtube', Array)
+#1 D:\xampp\htdocs\cakephp\lib\Cake\View\View.php(456): View->loadHelpers()
+#2 D:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(959): View->render(NULL, NULL)
+#3 D:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(110): Controller->render()
+#4 D:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#5 D:\xampp\htdocs\cakephp\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-10-11 21:56:20 Error: [MissingHelperException] Helper class YoutubeHelper could not be found.
+#0 D:\xampp\htdocs\cakephp\lib\Cake\View\View.php(850): HelperCollection->load('Youtube', Array)
+#1 D:\xampp\htdocs\cakephp\lib\Cake\View\View.php(456): View->loadHelpers()
+#2 D:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(959): View->render(NULL, NULL)
+#3 D:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(110): Controller->render()
+#4 D:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#5 D:\xampp\htdocs\cakephp\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-10-11 21:57:49 Error: [MissingHelperException] Helper class YoutubeHelper could not be found.
+#0 D:\xampp\htdocs\cakephp\lib\Cake\View\View.php(850): HelperCollection->load('Youtube', Array)
+#1 D:\xampp\htdocs\cakephp\lib\Cake\View\View.php(456): View->loadHelpers()
+#2 D:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(959): View->render(NULL, NULL)
+#3 D:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(110): Controller->render()
+#4 D:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#5 D:\xampp\htdocs\cakephp\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-10-11 21:58:18 Error: [MissingHelperException] Helper class YoutubeHelper could not be found.
+#0 D:\xampp\htdocs\cakephp\lib\Cake\View\View.php(850): HelperCollection->load('Youtube', Array)
+#1 D:\xampp\htdocs\cakephp\lib\Cake\View\View.php(456): View->loadHelpers()
+#2 D:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(959): View->render(NULL, NULL)
+#3 D:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(110): Controller->render()
+#4 D:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#5 D:\xampp\htdocs\cakephp\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-10-11 22:12:02 Error: [MissingViewException] View file "D:\xampp\htdocs\cakephp\app\View\Posts\user_posts.ctp" is missing.
+#0 D:\xampp\htdocs\cakephp\lib\Cake\View\View.php(460): View->_getViewFileName(NULL)
+#1 D:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(959): View->render(NULL, NULL)
+#2 D:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(110): Controller->render()
+#3 D:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#4 D:\xampp\htdocs\cakephp\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-10-11 22:12:42 Error: [MissingViewException] View file "D:\xampp\htdocs\cakephp\app\View\Posts\user_posts.ctp" is missing.
+#0 D:\xampp\htdocs\cakephp\lib\Cake\View\View.php(460): View->_getViewFileName(NULL)
+#1 D:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(959): View->render(NULL, NULL)
+#2 D:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(110): Controller->render()
+#3 D:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#4 D:\xampp\htdocs\cakephp\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-10-11 22:13:12 Error: [MissingViewException] View file "D:\xampp\htdocs\cakephp\app\View\Posts\user_posts.ctp" is missing.
+#0 D:\xampp\htdocs\cakephp\lib\Cake\View\View.php(460): View->_getViewFileName(NULL)
+#1 D:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(959): View->render(NULL, NULL)
+#2 D:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(110): Controller->render()
+#3 D:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#4 D:\xampp\htdocs\cakephp\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-10-11 22:13:19 Error: [MissingViewException] View file "D:\xampp\htdocs\cakephp\app\View\Posts\user_posts.ctp" is missing.
+#0 D:\xampp\htdocs\cakephp\lib\Cake\View\View.php(460): View->_getViewFileName(NULL)
+#1 D:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(959): View->render(NULL, NULL)
+#2 D:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(110): Controller->render()
+#3 D:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#4 D:\xampp\htdocs\cakephp\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-10-11 22:13:38 Error: [MissingViewException] View file "D:\xampp\htdocs\cakephp\app\View\Posts\user_posts.ctp" is missing.
+#0 D:\xampp\htdocs\cakephp\lib\Cake\View\View.php(460): View->_getViewFileName(NULL)
+#1 D:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(959): View->render(NULL, NULL)
+#2 D:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(110): Controller->render()
+#3 D:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#4 D:\xampp\htdocs\cakephp\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-10-11 22:15:19 Error: [MissingViewException] View file "D:\xampp\htdocs\cakephp\app\View\Posts\user_posts.ctp" is missing.
+#0 D:\xampp\htdocs\cakephp\lib\Cake\View\View.php(460): View->_getViewFileName(NULL)
+#1 D:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(959): View->render(NULL, NULL)
+#2 D:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(110): Controller->render()
+#3 D:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#4 D:\xampp\htdocs\cakephp\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-10-11 22:15:20 Error: [MissingViewException] View file "D:\xampp\htdocs\cakephp\app\View\Posts\user_posts.ctp" is missing.
+#0 D:\xampp\htdocs\cakephp\lib\Cake\View\View.php(460): View->_getViewFileName(NULL)
+#1 D:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(959): View->render(NULL, NULL)
+#2 D:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(110): Controller->render()
+#3 D:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#4 D:\xampp\htdocs\cakephp\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-10-11 22:15:21 Error: [MissingViewException] View file "D:\xampp\htdocs\cakephp\app\View\Posts\user_posts.ctp" is missing.
+#0 D:\xampp\htdocs\cakephp\lib\Cake\View\View.php(460): View->_getViewFileName(NULL)
+#1 D:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(959): View->render(NULL, NULL)
+#2 D:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(110): Controller->render()
+#3 D:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#4 D:\xampp\htdocs\cakephp\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-10-13 16:11:31 Error: [CakeException] Method query does not exist
+#0 D:\xampp\htdocs\cakephp\app\Controller\UsersController.php(25): CakeRequest->__call('query', Array)
+#1 D:\xampp\htdocs\cakephp\app\Controller\UsersController.php(25): CakeRequest->query('code')
+#2 [internal function]: UsersController->login()
+#3 D:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#4 D:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#5 D:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#6 D:\xampp\htdocs\cakephp\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2014-10-13 16:12:17 Error: [CakeException] Method query does not exist
+#0 D:\xampp\htdocs\cakephp\app\Controller\UsersController.php(25): CakeRequest->__call('query', Array)
+#1 D:\xampp\htdocs\cakephp\app\Controller\UsersController.php(25): CakeRequest->query('code')
+#2 [internal function]: UsersController->login()
+#3 D:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#4 D:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#5 D:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#6 D:\xampp\htdocs\cakephp\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2014-10-13 16:12:19 Error: [CakeException] Method query does not exist
+#0 D:\xampp\htdocs\cakephp\app\Controller\UsersController.php(25): CakeRequest->__call('query', Array)
+#1 D:\xampp\htdocs\cakephp\app\Controller\UsersController.php(25): CakeRequest->query('code')
+#2 [internal function]: UsersController->login()
+#3 D:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#4 D:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#5 D:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#6 D:\xampp\htdocs\cakephp\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2014-10-13 16:12:20 Error: [CakeException] Method query does not exist
+#0 D:\xampp\htdocs\cakephp\app\Controller\UsersController.php(25): CakeRequest->__call('query', Array)
+#1 D:\xampp\htdocs\cakephp\app\Controller\UsersController.php(25): CakeRequest->query('code')
+#2 [internal function]: UsersController->login()
+#3 D:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#4 D:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#5 D:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#6 D:\xampp\htdocs\cakephp\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2014-10-13 16:12:20 Error: [CakeException] Method query does not exist
+#0 D:\xampp\htdocs\cakephp\app\Controller\UsersController.php(25): CakeRequest->__call('query', Array)
+#1 D:\xampp\htdocs\cakephp\app\Controller\UsersController.php(25): CakeRequest->query('code')
+#2 [internal function]: UsersController->login()
+#3 D:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#4 D:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#5 D:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#6 D:\xampp\htdocs\cakephp\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2014-10-13 16:12:20 Error: [CakeException] Method query does not exist
+#0 D:\xampp\htdocs\cakephp\app\Controller\UsersController.php(25): CakeRequest->__call('query', Array)
+#1 D:\xampp\htdocs\cakephp\app\Controller\UsersController.php(25): CakeRequest->query('code')
+#2 [internal function]: UsersController->login()
+#3 D:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#4 D:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#5 D:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#6 D:\xampp\htdocs\cakephp\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2014-10-13 16:12:20 Error: [CakeException] Method query does not exist
+#0 D:\xampp\htdocs\cakephp\app\Controller\UsersController.php(25): CakeRequest->__call('query', Array)
+#1 D:\xampp\htdocs\cakephp\app\Controller\UsersController.php(25): CakeRequest->query('code')
+#2 [internal function]: UsersController->login()
+#3 D:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#4 D:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#5 D:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#6 D:\xampp\htdocs\cakephp\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2014-10-13 16:12:20 Error: [CakeException] Method query does not exist
+#0 D:\xampp\htdocs\cakephp\app\Controller\UsersController.php(25): CakeRequest->__call('query', Array)
+#1 D:\xampp\htdocs\cakephp\app\Controller\UsersController.php(25): CakeRequest->query('code')
+#2 [internal function]: UsersController->login()
+#3 D:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#4 D:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#5 D:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#6 D:\xampp\htdocs\cakephp\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2014-10-13 16:12:21 Error: [CakeException] Method query does not exist
+#0 D:\xampp\htdocs\cakephp\app\Controller\UsersController.php(25): CakeRequest->__call('query', Array)
+#1 D:\xampp\htdocs\cakephp\app\Controller\UsersController.php(25): CakeRequest->query('code')
+#2 [internal function]: UsersController->login()
+#3 D:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#4 D:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#5 D:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#6 D:\xampp\htdocs\cakephp\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2014-10-13 16:12:36 Error: [CakeException] Method query does not exist
+#0 D:\xampp\htdocs\cakephp\app\Controller\UsersController.php(25): CakeRequest->__call('query', Array)
+#1 D:\xampp\htdocs\cakephp\app\Controller\UsersController.php(25): CakeRequest->query('code')
+#2 [internal function]: UsersController->login()
+#3 D:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#4 D:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#5 D:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#6 D:\xampp\htdocs\cakephp\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2014-10-13 16:13:02 Error: [CakeException] Method query does not exist
+#0 D:\xampp\htdocs\cakephp\app\Controller\UsersController.php(25): CakeRequest->__call('query', Array)
+#1 D:\xampp\htdocs\cakephp\app\Controller\UsersController.php(25): CakeRequest->query('code')
+#2 [internal function]: UsersController->login()
+#3 D:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#4 D:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#5 D:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#6 D:\xampp\htdocs\cakephp\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2014-10-13 16:13:36 Error: [CakeException] Method query does not exist
+#0 D:\xampp\htdocs\cakephp\app\Controller\UsersController.php(25): CakeRequest->__call('query', Array)
+#1 D:\xampp\htdocs\cakephp\app\Controller\UsersController.php(25): CakeRequest->query('code')
+#2 [internal function]: UsersController->login()
+#3 D:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#4 D:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#5 D:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#6 D:\xampp\htdocs\cakephp\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2014-10-13 16:13:40 Error: [CakeException] Method query does not exist
+#0 D:\xampp\htdocs\cakephp\app\Controller\UsersController.php(25): CakeRequest->__call('query', Array)
+#1 D:\xampp\htdocs\cakephp\app\Controller\UsersController.php(25): CakeRequest->query('code')
+#2 [internal function]: UsersController->login()
+#3 D:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#4 D:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#5 D:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#6 D:\xampp\htdocs\cakephp\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2014-10-13 16:13:45 Error: [CakeException] Method query does not exist
+#0 D:\xampp\htdocs\cakephp\app\Controller\UsersController.php(25): CakeRequest->__call('query', Array)
+#1 D:\xampp\htdocs\cakephp\app\Controller\UsersController.php(25): CakeRequest->query('code')
+#2 [internal function]: UsersController->login()
+#3 D:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#4 D:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#5 D:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#6 D:\xampp\htdocs\cakephp\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2014-10-13 16:13:47 Error: [CakeException] Method query does not exist
+#0 D:\xampp\htdocs\cakephp\app\Controller\UsersController.php(25): CakeRequest->__call('query', Array)
+#1 D:\xampp\htdocs\cakephp\app\Controller\UsersController.php(25): CakeRequest->query('code')
+#2 [internal function]: UsersController->login()
+#3 D:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#4 D:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#5 D:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#6 D:\xampp\htdocs\cakephp\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2014-10-13 16:13:48 Error: [CakeException] Method query does not exist
+#0 D:\xampp\htdocs\cakephp\app\Controller\UsersController.php(25): CakeRequest->__call('query', Array)
+#1 D:\xampp\htdocs\cakephp\app\Controller\UsersController.php(25): CakeRequest->query('code')
+#2 [internal function]: UsersController->login()
+#3 D:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#4 D:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#5 D:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#6 D:\xampp\htdocs\cakephp\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2014-10-13 16:13:51 Error: [CakeException] Method query does not exist
+#0 D:\xampp\htdocs\cakephp\app\Controller\UsersController.php(25): CakeRequest->__call('query', Array)
+#1 D:\xampp\htdocs\cakephp\app\Controller\UsersController.php(25): CakeRequest->query('code')
+#2 [internal function]: UsersController->login()
+#3 D:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#4 D:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#5 D:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#6 D:\xampp\htdocs\cakephp\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2014-10-26 14:50:08 Error: [MissingViewException] View file "D:\xampp\htdocs\cakephp\app\View\Comments\add.ctp" is missing.
+#0 D:\xampp\htdocs\cakephp\lib\Cake\View\View.php(460): View->_getViewFileName(NULL)
+#1 D:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(959): View->render(NULL, NULL)
+#2 D:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(110): Controller->render()
+#3 D:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(CommentsController), Object(CakeRequest), Object(CakeResponse))
+#4 D:\xampp\htdocs\cakephp\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}

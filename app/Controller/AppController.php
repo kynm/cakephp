@@ -45,5 +45,21 @@ class AppController extends Controller {
         //'authorize' => array('Controller') // Added this line
     )
 );
+    public function beforeFilter() {
+        $this->set('user', $this->Auth->user());
+        // App::import('Vendor', 'facebook/src/facebook');
+        // require_once(APP . 'Vendor' . DS . 'facebook' .  DS . 'src' . DS . 'Facebook' . DS . 'Facebook.php'); 
+        // $this->Facebook = new Facebook(array(
+        //     'appId'     =>  '1493302597607739',
+        //     'secret'    =>  '81cb6b21693127583182dcd929bb5389'
+
+        // ));
+
+        // $this->Auth->allow('index', 'view');
+    }
+public function beforeRender() {
+    //$this->set('fb_login_url', $this->Facebook->getLoginUrl(array('redirect_uri' => Router::url(array('controller' => 'users', 'action' => 'login'), true))));
+    $this->set('user', $this->Auth->user());
+}
 }
 
