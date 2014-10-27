@@ -47,22 +47,16 @@ class User extends AppModel {
   {
         return $check['password'] == $this->data[$this->alias]['password_validate'];
   }
-  public $hasMany = array(
-    'FriendFrom'=>array(
-       'className'=>'Friendship',
-       'foreignKey'=>'user_from'
-    ),
-    'FriendTo'=>array(
-       'className'=>'Friendship',
-       'foreignKey'=>'user_to'
-    )
-  );
-  public $hasAndBelongsToMany = array(
-    'UserFriendship' => array(
-        'className' => 'User',
-        'joinTable' => 'friendships',
-        'foreignKey' => 'user_from',
-        'associationForeignKey' => 'user_to'
-      )
-  );
+    public $hasMany = array(
+        'Followers' => array(
+            'className' => 'Relationship',
+            'foreignKey' => 'followed_id',
+            'dependent'=> true
+        ),
+        'FollowingUsers' => array(
+            'className' => 'Relationship',
+            'foreignKey' => 'followed_id',
+            'dependent'=> true
+        ),
+    );
 }

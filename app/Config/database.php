@@ -65,7 +65,7 @@ class DATABASE_CONFIG {
 		'host' => 'localhost',
 		'login' => 'root',
 		'password' => '',
-		'database' => 'haivl',
+		'database' => 'cakephp',
 		'prefix' => '',
 		//'encoding' => 'utf8',
 	);

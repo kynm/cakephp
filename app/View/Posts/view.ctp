@@ -1,7 +1,14 @@
 <!-- File: /app/View/Posts/view.ctp -->
 
 <h1><?php echo h($post['Post']['title'])?></h1>
-
+<p><small>Name: <?php echo $post['User']['username']?></small>
+<?php 
+if (!$Relationship->isFollower($user_id, $post['Post']['user_id']) && $user_id != $post['Post']['user_id']):?>
+    <?php echo $this->Html->link('Follow', array('controller' => 'Relationships', 'action' => 'follow', $post['User']['id']), array('class' => 'btn btn-primary', 'data-remote' => 'true'));?>
+<?php elseif ($Relationship->isFollower($user_id, $post['Post']['user_id'])):?>
+    <?php echo $this->Html->link('UnFollow', array('controller' => 'Relationships', 'action' => 'unFollow', $user_id, $post['Post']['user_id']), array('class' => 'btn btn-primary', 'data-remote' => 'true'));?>
+<?php endif;?>
+</p>
 <p><small>Created: <?php echo $post['Post']['created']?></small></p>
 
 <p><?php echo $this->Youtube->video($post['Post']['body'])?></p>
