@@ -22,15 +22,21 @@ class Post extends AppModel {
 		if(stripos($check['body'],'youtube.com')===false){
 		    return false;
 		} else {
-			return true;    
+			return true;  
 		}
   	}
-	  public $hasMany = array(
+	public $hasMany = array(
 	    'Comment'=>array(
-	       'className'=>'Comment',
-	       'foreignKey'=>'post_id'
+	       	'className'=>'Comment',
+	       	'foreignKey'=>'post_id'
 	    ),
-	  );
+	);
+    public $belongsTo = array(
+        'User' => array(
+            'className' => 'User',
+            'foreignKey' => 'user_id'
+        ),
+    );
 
 }
 ?>

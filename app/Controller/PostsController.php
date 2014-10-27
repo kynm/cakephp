@@ -2,7 +2,7 @@
 class PostsController extends AppController {
     public $helpers = array('Html', 'Form', 'Youtube', 'Paginator');
     public $components = array('Paginator');
-    public $uses = array('Comment', 'Post');
+    public $uses = array('Comment', 'Post', 'Relationship');
 
     public $paginate = array(
         'Post' => array('limit' => 4,
@@ -30,16 +30,18 @@ class PostsController extends AppController {
 
     public function view($id = null) {
         $user = $this->Auth->user();
+        $Relationship = $this->Relationship;
         $this->Post->id = $id;
         $post = $this->Post->read();
         $this->Paginator->settings = array(
             'conditions' =>array('post_id' => $id),
             'limit' => 2,
         );
-        //$comments = $this->Comment->find('all', array('conditions' => array('post_id' => $id)));
         $comments = $this->Paginator->paginate('Comment');
         $this->set('post', $post);
         $this->set('comments', $comments);
+        $this->set('user_id', $user['id']);
+        $this->set('Relationship', $Relationship);
     }
 
     public function add() {

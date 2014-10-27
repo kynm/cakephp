@@ -324,3 +324,18 @@
 #3 D:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(CommentsController), Object(CakeRequest), Object(CakeResponse))
 #4 D:\xampp\htdocs\cakephp\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #5 {main}
+2014-10-27 09:36:00 Error: [MissingConnectionException] Database connection "SQLSTATE[HY000] [1049] Unknown database 'haivl'" is missing, or could not be created.
+#0 C:\xampp\htdocs\cakephp\lib\Cake\Model\Datasource\DboSource.php(245): Mysql->connect()
+#1 C:\xampp\htdocs\cakephp\lib\Cake\Model\ConnectionManager.php(101): DboSource->__construct(Array)
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Model\Model.php(3382): ConnectionManager::getDataSource('default')
+#3 C:\xampp\htdocs\cakephp\lib\Cake\Model\Model.php(1083): Model->setDataSource('default')
+#4 C:\xampp\htdocs\cakephp\lib\Cake\Model\Model.php(3408): Model->setSource('posts')
+#5 C:\xampp\htdocs\cakephp\lib\Cake\Model\Model.php(2663): Model->getDataSource()
+#6 C:\xampp\htdocs\cakephp\lib\Cake\Model\Model.php(1491): Model->find('first', Array)
+#7 C:\xampp\htdocs\cakephp\app\Controller\PostsController.php(34): Model->read()
+#8 [internal function]: PostsController->view('5')
+#9 C:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#10 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#11 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#12 C:\xampp\htdocs\cakephp\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
