@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 23, 2014 at 03:14 PM
+-- Generation Time: Oct 27, 2014 at 12:15 PM
 -- Server version: 5.6.16
 -- PHP Version: 5.5.11
 
@@ -17,8 +17,31 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8 */;
 
 --
--- Database: `haivl`
+-- Database: `cakephp`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `comments`
+--
+
+CREATE TABLE IF NOT EXISTS `comments` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `post_id` varchar(50) DEFAULT NULL,
+  `body` text,
+  `created` datetime DEFAULT NULL,
+  `modified` datetime DEFAULT NULL,
+  `user_id` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=11 ;
+
+--
+-- Dumping data for table `comments`
+--
+
+INSERT INTO `comments` (`id`, `post_id`, `body`, `created`, `modified`, `user_id`) VALUES
+(10, '5', 'helloword', '2014-10-27 08:53:30', '2014-10-27 08:53:30', '7');
 
 -- --------------------------------------------------------
 
@@ -28,10 +51,8 @@ SET time_zone = "+00:00";
 
 CREATE TABLE IF NOT EXISTS `friendships` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
-  `user_from` varchar(255) DEFAULT NULL,
-  `user_to` varchar(255) DEFAULT NULL,
-  `created` datetime DEFAULT NULL,
-  `status` varchar(50) DEFAULT NULL,
+  `user_id` varchar(255) DEFAULT NULL,
+  `followed_id` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
@@ -79,7 +100,7 @@ CREATE TABLE IF NOT EXISTS `users` (
   `modified` datetime DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `username` (`username`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=7 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=9 ;
 
 --
 -- Dumping data for table `users`
@@ -88,16 +109,10 @@ CREATE TABLE IF NOT EXISTS `users` (
 INSERT INTO `users` (`id`, `username`, `password`, `email`, `fullname`, `created`, `modified`) VALUES
 (4, 'admin', '020178e5acdb8de1a04335e245e4feefd8115edc', 'odin88@gmail.com', '', NULL, NULL),
 (5, 'manhky', '123456', 'ngainguyendv@gmail.com', 'kynm', '2014-10-11 18:34:46', '2014-10-11 18:34:46'),
-(6, 'aaaaaa', '26a0bd50daee7b722122be885af78750579b7c43', 'aaaaaa@gmail.com', 'aaaaaa', '2014-10-11 18:40:01', '2014-10-11 18:40:01');
+(6, 'aaaaaa', '26a0bd50daee7b722122be885af78750579b7c43', 'aaaaaa@gmail.com', 'aaaaaa', '2014-10-11 18:40:01', '2014-10-11 18:40:01'),
+(7, 'admin', 'aa4f2e38e6c0ad0031897e9d50384f0e900ab3fd', 'ngainguyendv@gmail.com', 'nguyen manh ky', '2014-10-23 15:43:12', '2014-10-23 15:43:12'),
+(8, 'admin', 'aa4f2e38e6c0ad0031897e9d50384f0e900ab3fd', 'ngainguyendv@gmail.com', 'fdfdfdf', '2014-10-27 08:42:37', '2014-10-27 08:42:37');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
-CREATE TABLE IF NOT EXISTS `comments` (
-  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
-  `post_id` varchar(50) DEFAULT NULL,
-  `body` text,
-  `created` datetime DEFAULT NULL,
-  `modified` datetime DEFAULT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=10 ;
