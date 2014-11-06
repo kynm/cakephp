@@ -2,7 +2,7 @@
 class PostsController extends AppController {
     public $helpers = array('Html', 'Form', 'Youtube', 'Paginator');
     public $components = array('Paginator');
-    public $uses = array('Comment', 'Post', 'Relationship');
+    public $uses = array('Comment', 'Post', 'Relationship', 'User');
 
     public $paginate = array(
         'Post' => array('limit' => 4,
@@ -11,7 +11,13 @@ class PostsController extends AppController {
             )
         ),
     );
-
+    public function beforeRender() {
+        $user = $this->Auth->user();
+        $userId = $user['id'];
+        $relationship = $this->User->findById($userId);
+        $following = $relationship['FollowingUsers'];
+        
+    }
     public function index() {
         $this->Paginator->settings = array(
             'limit' => 4
@@ -33,6 +39,9 @@ class PostsController extends AppController {
         $Relationship = $this->Relationship;
         $this->Post->id = $id;
         $post = $this->Post->read();
+        $view = $post['Post']['view'];
+        $this->Post->set('view', $view + 1);
+        $this->Post->save();
         $this->Paginator->settings = array(
             'conditions' =>array('post_id' => $id),
             'limit' => 2,

@@ -9,6 +9,9 @@ if (!$Relationship->isFollower($user_id, $post['Post']['user_id']) && $user_id !
     <?php echo $this->Html->link('UnFollow', array('controller' => 'Relationships', 'action' => 'unFollow', $user_id, $post['Post']['user_id']), array('class' => 'btn btn-primary', 'data-remote' => 'true'));?>
 <?php endif;?>
 </p>
+<p>
+<?php echo $this->Facebook->like(); ?>
+</p>
 <p><small>Created: <?php echo $post['Post']['created']?></small></p>
 
 <p><?php echo $this->Youtube->video($post['Post']['body'])?></p>
@@ -17,6 +20,7 @@ if (!$Relationship->isFollower($user_id, $post['Post']['user_id']) && $user_id !
   <li class="next"><?php echo $this->Html->link(' Next', array('action' => 'view', $post['Post']['id']  + 1));?></li>
 </ul>
 <?php echo $this->element('comment\newcomment', array("post_id" => $post['Post']['id']));?>
+<?php echo $this->Facebook->comments(); ?>
 <div class="pagination">
     <ul>
         <?php 
