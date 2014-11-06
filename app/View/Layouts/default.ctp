@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<?php echo $this->Facebook->html(); ?>
     <head>
         <meta charset="utf-8">
         <title>HowFrameWork</title>
@@ -47,4 +48,5 @@
         <!-- JS -->
     <?php echo $this->fetch('scriptBottom'); ?>
     </body>
+    <?php echo $this->Facebook->init(); ?>
 </html>
