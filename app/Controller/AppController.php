@@ -46,6 +46,7 @@ class AppController extends Controller {
         )
     );
     public $helpers = array('Facebook.Facebook', 'Session', 'Form', 'Html');
+    public $uses = array('Comment', 'Post', 'Relationship', 'User');
 
     public function beforeFilter() {
         $this->set('user', $this->Auth->user());

@@ -55,7 +55,7 @@ class User extends AppModel {
         ),
         'FollowingUsers' => array(
             'className' => 'Relationship',
-            'foreignKey' => 'followed_id',
+            'foreignKey' => 'user_id',
             'dependent'=> true
         ),
     );

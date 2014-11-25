@@ -36,6 +36,16 @@ class PostsController extends AppController {
 
     public function view($id = null) {
         $user = $this->Auth->user();
+        $user = $this->User->findById($user['id']);
+        $followings = $user['FollowingUsers'];
+
+        $followings_id = array();
+        foreach ($followings as $following) {
+            $followings_id[] = $following['followed_id'];
+        }
+        $posts = $this->Post->find('all', array('conditions' => array('user_id' => $followings_id)));
+        die(var_dump($posts));
+        $user = $this->Auth->user();
         $Relationship = $this->Relationship;
         $this->Post->id = $id;
         $post = $this->Post->read();
