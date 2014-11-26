@@ -38,7 +38,7 @@
                     <?php foreach ($allPosts as $allPost) :?>
                         <table>
                                 <td>
-                                    <?php echo $this->Youtube->thumbnail($allPost['Post']['body'], 'thumb1', array('url' => array('action' => 'view', $allPost['Post']['id']))); ?>
+                                    <?php echo $this->Youtube->thumbnail($allPost['Post']['body'], 'thumb1', array('url' => array('controller' => 'posts', 'action' => 'view', $allPost['Post']['id']))); ?>
                                 </td>
                         </table>
                     <?php endforeach;?>

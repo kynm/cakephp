@@ -58,5 +58,10 @@ class User extends AppModel {
             'foreignKey' => 'user_id',
             'dependent'=> true
         ),
+        'Posts' => array(
+            'className' => 'Post',
+            'foreignKey' => 'user_id',
+            'dependent'=> true
+        ),
     );
 }

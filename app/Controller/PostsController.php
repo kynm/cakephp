@@ -18,9 +18,17 @@ class PostsController extends AppController {
         $following = $relationship['FollowingUsers'];
         
     }
-    public function index() {
+    public function index($flag = 'none') {
+        $order = array();
+        if ($flag == 'none') {
+            $order['Post.created'] = 'asc';
+        }
+        if ($flag == 'hot') {
+            $order['Post.view'] = 'asc';
+        }
         $this->Paginator->settings = array(
-            'limit' => 4
+            'limit' => 4,
+            'order' => $order
         );
         $data = $this->Paginator->paginate('Post');
         $this->set('posts', $data);
@@ -35,6 +43,8 @@ class PostsController extends AppController {
     }
 
     public function view($id = null) {
+        $neighbors = $this->Post->find('neighbors', array('field' => 'id', 'value' => $id));
+        //die(var_dump($neighbors));
         $user = $this->Auth->user();
         $user = $this->User->findById($user['id']);
         $followings = $user['FollowingUsers'];
@@ -57,6 +67,7 @@ class PostsController extends AppController {
             'limit' => 2,
         );
         $comments = $this->Paginator->paginate('Comment');
+        $this->set('neighbors', $neighbors);
         $this->set('post', $post);
         $this->set('comments', $comments);
         $this->set('user_id', $user['id']);

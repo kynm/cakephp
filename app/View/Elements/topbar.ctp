@@ -8,8 +8,8 @@
             </a>
             <div class="nav-collapse">
                 <ul class="nav">
-                    <li class="active"><?php echo $this->Html->link('Home', '/posts/index');?></li></li>
-                    <li><a href="#about">About</a></li>
+                    <li class="active"><?php echo $this->Html->link('Home', '/posts/index');?></li>
+                    <li><?php echo $this->Html->link('Hot', '/posts/index/hot');?></li>
                     <li><a href="#contact">Contact</a></li>
                     <?php if($this->Session->check('Auth.User.username')): ?>
                     <li class="dropdown">
