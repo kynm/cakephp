@@ -43,8 +43,8 @@ class PostsController extends AppController {
         foreach ($followings as $following) {
             $followings_id[] = $following['followed_id'];
         }
-        $posts = $this->Post->find('all', array('conditions' => array('user_id' => $followings_id)));
-        die(var_dump($posts));
+        $followingPosts = $this->Post->find('all', array('conditions' => array('user_id' => $followings_id), 'limit' => 3));
+        $this->set('followingPosts', $followingPosts);
         $user = $this->Auth->user();
         $Relationship = $this->Relationship;
         $this->Post->id = $id;

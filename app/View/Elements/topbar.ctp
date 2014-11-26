@@ -22,7 +22,6 @@
                     </li>
                     <?php else :?>
                     <li><?php echo $this->Html->link('Login', '/users/login');?></li>
-                    <li> <?php echo $this->Html->link('Facebook Login', $fb_login_url) . ' | ';?> </li>
                     <?php endif;?>
                 </ul>
             </div><!--/.nav-collapse -->

@@ -19,6 +19,13 @@ if (!$Relationship->isFollower($user_id, $post['Post']['user_id']) && $user_id !
   <li class="previous"><?php echo $this->Html->link(' Older', array('action' => 'view', $post['Post']['id']  - 1));?></li>
   <li class="next"><?php echo $this->Html->link(' Next', array('action' => 'view', $post['Post']['id']  + 1));?></li>
 </ul>
+<?php foreach ($followingPosts as $followingPost) :?>
+    <table>
+            <td>
+                <?php echo $this->Youtube->thumbnail($followingPost['Post']['body'], 'thumb3', array('url' => array('action' => 'view', $followingPost['Post']['id']))); ?>
+            </td>
+    </table>
+<?php endforeach;?>
 <?php echo $this->element('comment\newcomment', array("post_id" => $post['Post']['id']));?>
 <?php echo $this->Facebook->comments(); ?>
 <div class="pagination">

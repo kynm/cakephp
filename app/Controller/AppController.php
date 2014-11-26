@@ -49,6 +49,8 @@ class AppController extends Controller {
     public $uses = array('Comment', 'Post', 'Relationship', 'User');
 
     public function beforeFilter() {
+        $allPosts = $this->Post->find('all', array('limit' => 5, 'order' => array('Post.view' => 'desc')));
+        $this->set('allPosts', $allPosts);
         $this->set('user', $this->Auth->user());
     }
     public function beforeRender() {
