@@ -41,10 +41,21 @@ class PostsController extends AppController {
         $data = $this->Paginator->paginate('Post');
         $this->set('posts', $data);
     }
+    function search() {
+        if ($this->request->is('post')) {
+            $title = $this->request->data['Post']['title'];
+            $cond = array("OR" => array(
+                "Post.title LIKE '%$title%'",
+            ));
+            $posts = $this->Post->find("all", array("conditions" => $cond));
+            $this->set('posts', $posts);
+        } else {
+            $this->redirect(array('action' => 'index'));
+        }
+    }
 
     public function view($id = null) {
         $neighbors = $this->Post->find('neighbors', array('field' => 'id', 'value' => $id));
-        //die(var_dump($neighbors));
         $user = $this->Auth->user();
         $user = $this->User->findById($user['id']);
         $followings = $user['FollowingUsers'];

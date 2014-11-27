@@ -23,6 +23,12 @@
                     <?php else :?>
                     <li><?php echo $this->Html->link('Login', '/users/login');?></li>
                     <?php endif;?>
+                    <li>
+                        <?php echo $this->Form->create('Post', array('action' => 'search', 'novalidate' => true, 'class' => 'form-search'));?>
+                        <?php echo $this->Form->input('title', array('class' => 'input-medium search-query'));?>
+                            <button type="submit" value='GO!' class='hide'>Search</button>
+                        </form>
+                    </li>
                 </ul>
             </div><!--/.nav-collapse -->
         </div>
