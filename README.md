@@ -12,3 +12,9 @@ all function
 * comment post with facebook
 * like comment and share post on facebook
 * display all post new and hot
+## library
+* bootstrap 3.2
+* https://github.com/webtechnick/CakePHP-Facebook-Plugin
+## environment
+* apache
+* mysql
