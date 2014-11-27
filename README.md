@@ -1,4 +1,4 @@
-#CakePHP tutorial
+#CakePHP done tutorial
 all function
 * login and logout
 * post:
@@ -10,3 +10,4 @@ all function
 * hint 5 post many view
 * comment post
 * comment post with facebook
+* like comment and share post on facebook
