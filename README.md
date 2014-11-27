@@ -11,3 +11,4 @@ all function
 * comment post
 * comment post with facebook
 * like comment and share post on facebook
+* display all post new and hot
