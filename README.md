@@ -1,1 +1,12 @@
 #CakePHP tutorial
+all function
+-- login and logout
+-- post:
+  +only post link youtube
+-- display video youtube
+-- search post all video
+-- follower and following user
+-- display 5 post of all user many view of user follower
+-- hint 5 post many view
+-- comment post
+-- comment post with facebook
